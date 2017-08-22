@@ -45,6 +45,24 @@ h1, a {
   margin: auto;
 }
 
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form input {
+  line-height: 2em;
+  width: 60%;
+}
+
+.search-form input:focus {
+  outline-color: #438bbd;
+}
+.search-form button {
+  background: #438bbd;
+  border: none;
+  color: #fff;
+}
 
 @media only screen and (min-width: 768px)  {
   .container {

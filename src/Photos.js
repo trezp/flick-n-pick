@@ -10,7 +10,7 @@ class Photos extends React.Component {
     };
   }
   updateView = (props) =>{
-    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${this.props.api_key}&tags=${this.props.photo}&per_page=50&format=json&nojsoncallback=1`)
+    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${this.props.api_key}&tags=${this.props.photo}&accuracy=&safe_search=&per_page=50&format=json&nojsoncallback=1`)
     .then((response) => {
 
       const photos = response.data.photos.photo.map( photo => {
